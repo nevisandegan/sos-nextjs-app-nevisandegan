@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { ThemeProvider } from "@mui/material";
+import { Box, ThemeProvider } from "@mui/material";
 import theme from "@/theme/theme";
+import Header from "@/components/header/Header";
 
 const iranSans = localFont({
-  src: "./fonts/IRANSansXV.woff2",
+  src: "../public/fonts/IRANSansXV.woff2",
   variable: "--font-iran-sans",
 });
 
@@ -22,7 +23,17 @@ export default function RootLayout({
   return (
     <html lang="en" dir="rtl">
       <body className={`${iranSans.variable}`}>
-        <ThemeProvider theme={theme}>{children}</ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <Header />
+          <Box
+            sx={{
+              paddingX: { xs: "1rem", sm: "8rem" },
+              marginTop: { xs: "2.4rem", sm: "4.8rem" },
+            }}
+          >
+            {children}
+          </Box>
+        </ThemeProvider>
       </body>
     </html>
   );
