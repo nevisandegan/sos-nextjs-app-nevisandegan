@@ -164,7 +164,11 @@ export default function TodoList({ initialTodos = [] }: TodoListProps) {
         ))}
       </List>
       {filteredTodos.length === 0 && (
-        <Typography align="center" color="text.secondary" sx={{ mt: 2 }}>
+        <Typography
+          align="center"
+          color="text.secondary"
+          sx={{ mt: 2, fontSize: 18 }}
+        >
           No todos found!
         </Typography>
       )}
