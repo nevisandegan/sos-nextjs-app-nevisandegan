@@ -1,7 +1,19 @@
 {
   "todos": [
-    { "id": 1, "title": "یادگیری Next.js", "completed": false },
-    { "id": 2, "title": "طراحی UI خفن", "completed": true },
-    { "id": 3, "title": "نوشتن کد تمیز", "completed": false }
+    {
+      "id": "3fea",
+      "title": "watch movie",
+      "completed": false
+    },
+    {
+      "id": "c4dd",
+      "title": "watch football",
+      "completed": false
+    },
+    {
+      "id": "3b00",
+      "title": "read book",
+      "completed": true
+    }
   ]
 }
